@@ -1,0 +1,46 @@
+.bannerContainer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.bannerHeading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    color: var(--whiteColor);
+    z-index: 100;   
+    text-shadow: 2px 2px 15px #000000b3;
+    text-align: center;
+}
+
+.colorOverlay {
+    width: 100%;
+    height: inherit;
+    background-color: rgb(58, 19, 91, 0.3);
+    position: absolute;
+}
+
+.bannerContainer img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 770px) {
+
+    .bannerHeading {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .bannerContainer {
+        height: 200px;
+    }
+    .bannerHeading {
+        font-size: 26px;
+    }
+}

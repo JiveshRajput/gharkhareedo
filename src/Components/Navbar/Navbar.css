@@ -1,0 +1,120 @@
+header {
+    padding: 10px 30px;
+    background-color: var(--prColor);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 500;
+}
+
+.mainLogo {
+    width: 100px;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    color: var(--whiteColor);
+    text-decoration: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin: 0px 3px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: var(--navFontSize);
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: var(--whiteColor);
+    background-color: var(--secColor);
+}
+
+.headerIconStyle {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#menuIcon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    header {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+
+    .btnSection {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background-color: var(--secColor);
+        padding: 15px;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        transition: all 0.3s ease 0s;
+        z-index: 498;
+    }
+    .btnSection.show {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        list-style: none;
+        padding: 5px 0px;
+    }
+
+    .navbar li a {
+        padding: 10px 15px;
+        font-size: 20px;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar li a:hover {
+        color: var(--whiteColor);
+        background-color: var(--prColor);
+    }
+
+    #menuIcon {
+        display: block;
+    }
+}
