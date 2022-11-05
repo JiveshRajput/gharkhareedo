@@ -21,10 +21,10 @@ function Footer() {
                     <h3>Check</h3>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/menu'>News</Link></li>
                         <li><Link to='/'>About</Link></li>
-                        <li><Link to='/'>Services</Link></li>
                         <li><Link to='/'>Contact Us</Link></li>
+                        <li><Link to='/'>Service</Link></li>
+                        <li><Link to="/favourite">Favourite</Link></li>
                     </ul >
                 </div >
                 <div className="footContainer" id="footContainer4">

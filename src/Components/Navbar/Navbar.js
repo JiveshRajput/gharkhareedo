@@ -27,6 +27,7 @@ function Navbar() {
                         <li><Link to="/">About</Link></li>
                         <li><Link to="/">Contact Us</Link></li>
                         <li><Link to="/">Service</Link></li>
+                        <li><Link to="/favourite">Favourite</Link></li>
                     </ul>
                     <Link to='/favourite'><img src={whiteHeartIcon} className='headerIconStyle' alt="favouriteBtn" /></Link>
                 </div>
