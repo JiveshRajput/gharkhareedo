@@ -44,6 +44,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
+    min-height: 265px;
 }
 
 @media screen and (max-width: 430px) {

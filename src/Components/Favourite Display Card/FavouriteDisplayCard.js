@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { changeFavValue } from '../../ReduxStore/PropertyListSlice';
 import { removeFromFavouriteProperty } from '../../ReduxStore/FavouriteListSlice'
 import heartLogo from '../../Images/Icons/heartIcon.png'
-import filledHeartLogo from '../../Images/Icons/blueHeartIcon.png'
+import filledHeartLogo from '../../Images/Icons/redHeartIcon.png'
 import bathroomLogo from '../../Images/Icons/bathroomIcon.png'
 import bedroomLogo from '../../Images/Icons/bedroomIcon.png'
 
@@ -32,14 +32,14 @@ function FavouriteDisplayCard(props) {
             </div>
           </div>
           <div className="favHeartLogoContainer" onClick={changeFavouriteValue}>
-            <img src={(favourite) ? filledHeartLogo : heartLogo} />
+            <img src={(favourite) ? filledHeartLogo : heartLogo} alt="heart" />
           </div>
           <div className="favMoreDetailContainer">
             <div className="favMoreDetailBox">
-              <img src={bedroomLogo} alt="" /> {bedroom} Beds
+              <img src={bedroomLogo} alt="bedroom" /> {bedroom} Beds
             </div>
             <div className="favMoreDetailBox">
-              <img src={bathroomLogo} alt="" /> {bathroom} Bathroom
+              <img src={bathroomLogo} alt="bathroom" /> {bathroom} Bathroom
             </div>
           </div>
         </div>
