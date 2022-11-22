@@ -16,18 +16,17 @@ function Navbar() {
         Dispatch(setNavToggle());
     }
 
-
     return (
         <>
             <header>
                 <Link to="/"><img src={iconLogo} alt="logo" className='mainLogo' /></Link>
                 <div className={`${(NavToggleVal) ? 'show' : ''} btnSection`}>
                     <ul className='navbar'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/">About</Link></li>
-                        <li><Link to="/">Contact Us</Link></li>
-                        <li><Link to="/">Service</Link></li>
-                        <li><Link to="/favourite">Favourite</Link></li>
+                        <li><Link to="/" onClick={()=>toggleNavValue()}>Home</Link></li>
+                        <li><Link to="/" onClick={()=>toggleNavValue()}>About</Link></li>
+                        <li><Link to="/" onClick={()=>toggleNavValue()}>Contact Us</Link></li>
+                        <li><Link to="/" onClick={()=>toggleNavValue()}>Service</Link></li>
+                        <li><Link to="/favourite" onClick={()=>toggleNavValue()}>Favourite</Link></li>
                     </ul>
                     <Link to='/favourite'><img src={whiteHeartIcon} className='headerIconStyle' alt="favouriteBtn" /></Link>
                 </div>

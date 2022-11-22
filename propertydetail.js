@@ -1,4 +1,3 @@
-// id, area, housename, rent, renttype, favourite, date
 export default propertyList = [
     {
         id: "1",
