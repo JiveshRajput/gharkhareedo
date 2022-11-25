@@ -13,7 +13,9 @@ const PropertyListSlice = createSlice({
                 rent: 4000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg'
+                image: 'https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "2",
@@ -24,7 +26,9 @@ const PropertyListSlice = createSlice({
                 rent: 2000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://cdn.homedit.com/wp-content/uploads/2012/10/Stunning-cubic-house.jpg'
+                image: 'https://cdn.homedit.com/wp-content/uploads/2012/10/Stunning-cubic-house.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "3",
@@ -35,7 +39,9 @@ const PropertyListSlice = createSlice({
                 rent: 9000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://amazingarchitecture.com/storage/711/Deep-Villa-Atrey-and-Associates-New-Delhi-ndia-Amazing-Architecture-House.jpg'
+                image: 'https://amazingarchitecture.com/storage/711/Deep-Villa-Atrey-and-Associates-New-Delhi-ndia-Amazing-Architecture-House.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "4",
@@ -46,7 +52,9 @@ const PropertyListSlice = createSlice({
                 rent: 7000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1430826114/Domestic%20Hotels/Hotels_New%20Delhi/On%20the%20House/Overview.jpg'
+                image: 'https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1430826114/Domestic%20Hotels/Hotels_New%20Delhi/On%20the%20House/Overview.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "5",
@@ -57,7 +65,9 @@ const PropertyListSlice = createSlice({
                 rent: 6500,
                 rentType: 'month',
                 favourite: false,
-                image: 'http://images.jdmagicbox.com/comp/delhi/t8/011pxx11.xx11.000639625191.y3t8/catalogue/new-delhi-house-connaught-place-delhi-b88kkf806a.jpg'
+                image: 'http://images.jdmagicbox.com/comp/delhi/t8/011pxx11.xx11.000639625191.y3t8/catalogue/new-delhi-house-connaught-place-delhi-b88kkf806a.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "6",
@@ -68,7 +78,9 @@ const PropertyListSlice = createSlice({
                 rent: 4000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://homeworlddesign.com/wp-content/uploads/2018/03/Bangalore-House-1.jpg'
+                image: 'https://homeworlddesign.com/wp-content/uploads/2018/03/Bangalore-House-1.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "7",
@@ -79,7 +91,9 @@ const PropertyListSlice = createSlice({
                 rent: 2000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://mediacdn.99acres.com/media1/19483/17/389677998M-1667367100174.jpg'
+                image: 'https://mediacdn.99acres.com/media1/19483/17/389677998M-1667367100174.jpg',
+                propertyType: 'house',
+                available: true
             },
             {
                 id: "8",
@@ -90,7 +104,9 @@ const PropertyListSlice = createSlice({
                 rent: 9000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://is1-3.housingcdn.com/01c16c28/3429c4bd168e28600b49eec83a75d0df/v0/fs/5_bhk_independent_house-for-sale-kalena_agrahara-Bangalore-others.jpg'
+                image: 'https://is1-3.housingcdn.com/01c16c28/3429c4bd168e28600b49eec83a75d0df/v0/fs/5_bhk_independent_house-for-sale-kalena_agrahara-Bangalore-others.jpg',
+                propertyType: 'flat',
+                available: true
             },
             {
                 id: "9",
@@ -101,7 +117,9 @@ const PropertyListSlice = createSlice({
                 rent: 7000,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://5.imimg.com/data5/WD/YF/MY-67333968/house-painters-in-bangalore-500x500.jpg'
+                image: 'https://5.imimg.com/data5/WD/YF/MY-67333968/house-painters-in-bangalore-500x500.jpg',
+                propertyType: 'flat',
+                available: true
             },
             {
                 id: "10",
@@ -112,7 +130,9 @@ const PropertyListSlice = createSlice({
                 rent: 6500,
                 rentType: 'month',
                 favourite: false,
-                image: 'https://is1-3.housingcdn.com/01c16c28/67a0e42a89aaf930f38fb40918aaaf11/v0/fs/4_bhk_independent_house-for-sale-sanjaynagar-Bangalore-outside_view.jpg'
+                image: 'https://is1-3.housingcdn.com/01c16c28/67a0e42a89aaf930f38fb40918aaaf11/v0/fs/4_bhk_independent_house-for-sale-sanjaynagar-Bangalore-outside_view.jpg',
+                propertyType: 'house',
+                available: true
             }
         ]        
     },

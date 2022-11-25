@@ -12,7 +12,6 @@ const FavouriteListSlice = createSlice({
         removeFromFavouriteProperty(state, actions) {
             state.favPropertyList = state.favPropertyList.filter((obj)=> obj.id !== actions.payload);
         }
-
     }
 });
 
