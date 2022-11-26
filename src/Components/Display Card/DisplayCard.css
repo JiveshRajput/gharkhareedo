@@ -23,7 +23,6 @@
     position: absolute;
     background-color: var(--whiteColor);
     padding: 3px 7px;
-    /* border: 1px solid var(--prColor); */
     border-radius: 10px;
     color: var(--prColor);
     font-weight: 600;
