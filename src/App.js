@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
+import Navbar from './Layouts/Navbar/Navbar'
+import Footer from './Layouts/Footer/Footer'
 import HomePage from './Pages/Home/HomePage'
 import FavPage from './Pages/Favourite/FavouritePage'
 

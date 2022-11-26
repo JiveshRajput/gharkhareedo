@@ -1,6 +1,6 @@
 import React from 'react'
-import houseImage from '../../Images/houseImage01.jpg'
-import './Banner.css'
+import houseImage from '../../Assets/Images/houseImage01.jpg'
+import '../../Assets/Styles/Banner.css'
 
 function Banner() {
   return (

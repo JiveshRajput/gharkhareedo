@@ -1,10 +1,10 @@
 import React from 'react'
-import './Footer.css'
-import logo from '../../Images/logo.png'
-import facebook from '../../Images/Icons/facebook.png'
-import google from '../../Images/Icons/google.png'
-import instagram from '../../Images/Icons/instagram.png'
+import logo from '../../Assets/Images/logo.png'
+import facebook from '../../Assets/Images/Icons/facebook.png'
+import google from '../../Assets/Images/Icons/google.png'
+import instagram from '../../Assets/Images/Icons/instagram.png'
 import { Link } from 'react-router-dom'
+import '../../Assets/Styles/Footer.css'
 
 function Footer() {
     return (

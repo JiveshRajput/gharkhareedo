@@ -2,12 +2,12 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { changeFavValue } from '../../ReduxStore/PropertyListSlice';
 import { addToFavouriteProperty, removeFromFavouriteProperty } from '../../ReduxStore/FavouriteListSlice'
-import './DisplayCard.css'
+import '../../Assets/Styles/DisplayCard.css'
 
-import heartLogo from '../../Images/Icons/heartIcon.png'
-import filledHeartLogo from '../../Images/Icons/redHeartIcon.png'
-import bathroomLogo from '../../Images/Icons/bathroomIcon.png'
-import bedroomLogo from '../../Images/Icons/bedroomIcon.png'
+import heartLogo from '../../Assets/Images/Icons/heartIcon.png'
+import filledHeartLogo from '../../Assets/Images/Icons/redHeartIcon.png'
+import bathroomLogo from '../../Assets/Images/Icons/bathroomIcon.png'
+import bedroomLogo from '../../Assets/Images/Icons/bedroomIcon.png'
 
 function DisplayCard(props) {
     const { id, location, address, rent, rentType, favourite, image, bedroom, bathroom, propertyType } = props.values;

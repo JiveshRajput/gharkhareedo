@@ -13,7 +13,6 @@ function HomePage() {
 
   function submitFilterBtn(e, { location, date, price, propType }) {
     e.preventDefault();
-    console.log(location, date, price, propType)
     setFilterLocation(location);
     setFilterDate(date);
     setFilterPrice(price);

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import iconLogo from '../../Images/logo.png'
-import { setNavToggle } from '../../ReduxStore/NavToggleSlice'
-import whiteHeartIcon from '../../Images/Icons/whiteHeartIcon.png'
-import menuIcon from '../../Images/Icons/menuIcon.png'
-import './Navbar.css'
+import iconLogo from '../../Assets/Images/logo.png'
+import { setNavToggle } from '../../Middleware/ReduxStore/NavToggleSlice'
+import menuIcon from '../../Assets/Images/Icons/menuIcon.png'
+import '../../Assets/Styles/Navbar.css'
+
 
 function Navbar() {
     const NavToggleVal = useSelector(state => state.NavToggle);
@@ -27,7 +27,6 @@ function Navbar() {
                         <li><Link to="/" onClick={toggleNavValue}>Service</Link></li>
                         <li><Link to="/favourite" onClick={toggleNavValue}>Favourite</Link></li>
                     </ul>
-                    {/* <Link to='/favourite'><img src={whiteHeartIcon} className='headerIconStyle' alt="favouriteBtn" /></Link> */}
                     <div className='navBtnContainer'>
                         <input type="button" className='btn loginBtn' value="Login" />
                         <input type="button" className='btn signUpBtn' value="Sign Up" />

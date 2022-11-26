@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Filter.css'
+import '../../Assets/Styles/Filter.css'
 
 function Filter({ submitFilterBtn }) {
     const [location, setLocation] = useState('');
