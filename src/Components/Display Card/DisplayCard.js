@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { changeFavValue } from '../../ReduxStore/PropertyListSlice';
-import { addToFavouriteProperty, removeFromFavouriteProperty } from '../../ReduxStore/FavouriteListSlice'
+import { changeFavValue } from '../../Middleware/ReduxStore/PropertyListSlice';
+import { addToFavouriteProperty, removeFromFavouriteProperty } from '../../Middleware/ReduxStore/FavouriteListSlice'
 import '../../Assets/Styles/DisplayCard.css'
 
 import heartLogo from '../../Assets/Images/Icons/heartIcon.png'
