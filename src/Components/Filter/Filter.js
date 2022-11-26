@@ -39,7 +39,7 @@ function Filter({ submitFilterBtn }) {
                 <div className="filterBox">
                     <label className='filterLabel' htmlFor="filterPropType">Property Type</label>
                     <select name="filterPrice" className='filterValue' id="filterPropType" onChange={(e) => setPropType(e.target.value)}>
-                        <option value="">Select Property Type</option>
+                        <option value="">Select Type</option>
                         <option value="house">Houses</option>
                         <option value="flat">Flats</option>
                     </select>
