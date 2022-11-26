@@ -11,7 +11,6 @@ function Navbar() {
     const NavToggleVal = useSelector(state => state.NavToggle);
     const Dispatch = useDispatch();
 
-
     function toggleNavValue() {
         Dispatch(setNavToggle());
     }
@@ -22,13 +21,17 @@ function Navbar() {
                 <Link to="/"><img src={iconLogo} alt="logo" className='mainLogo' /></Link>
                 <div className={`${(NavToggleVal) ? 'show' : ''} btnSection`}>
                     <ul className='navbar'>
-                        <li><Link to="/" onClick={()=>toggleNavValue()}>Home</Link></li>
-                        <li><Link to="/" onClick={()=>toggleNavValue()}>About</Link></li>
-                        <li><Link to="/" onClick={()=>toggleNavValue()}>Contact Us</Link></li>
-                        <li><Link to="/" onClick={()=>toggleNavValue()}>Service</Link></li>
-                        <li><Link to="/favourite" onClick={()=>toggleNavValue()}>Favourite</Link></li>
+                        <li><Link to="/" onClick={toggleNavValue}>Home</Link></li>
+                        <li><Link to="/" onClick={toggleNavValue}>About</Link></li>
+                        <li><Link to="/" onClick={toggleNavValue}>Contact Us</Link></li>
+                        <li><Link to="/" onClick={toggleNavValue}>Service</Link></li>
+                        <li><Link to="/favourite" onClick={toggleNavValue}>Favourite</Link></li>
                     </ul>
-                    <Link to='/favourite'><img src={whiteHeartIcon} className='headerIconStyle' alt="favouriteBtn" /></Link>
+                    {/* <Link to='/favourite'><img src={whiteHeartIcon} className='headerIconStyle' alt="favouriteBtn" /></Link> */}
+                    <div className='navBtnContainer'>
+                        <input type="button" className='btn loginBtn' value="Login" />
+                        <input type="button" className='btn signUpBtn' value="Sign Up" />
+                    </div>
                 </div>
                 <img src={menuIcon} onClick={() => toggleNavValue()} className='headerIconStyle' id='menuIcon' alt="menuBtn" />
             </header>

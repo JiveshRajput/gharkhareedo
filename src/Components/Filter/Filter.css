@@ -9,8 +9,12 @@
 
 .filterBox {
     flex: 1 1 150px;
-    padding: 5px;
+    padding: 5px 10px;
+    border-right: 1px solid var(--whiteColor);
     color: var(--whiteColor);
+}
+.filterBox:last-child {
+    border: none;
 }
 
 .filterLabel{
@@ -49,5 +53,7 @@
 @media screen and (max-width: 790px) {
     .filterBox {
         flex: 1 1 100%;
+        border: none;
+        padding: 10px 5px;
     }
 }

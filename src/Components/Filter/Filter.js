@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './Filter.css'
 
 function Filter({ submitFilterBtn }) {
-
     const [location, setLocation] = useState('');
     const [date, setDate] = useState('');
     const [price, setPrice] = useState('');

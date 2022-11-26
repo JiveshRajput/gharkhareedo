@@ -59,17 +59,33 @@ header {
     display: none;
 }
 
+.btn {
+    padding: 6px 20px;
+    font-size: var(--navFontSize);
+    border-radius: 30px;
+    background-color: var(--whiteColor);
+    color: var(--prColor);
+    border: 2px solid var(--whiteColor);
+    font-weight: 600;
+    width: 110px;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.loginBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--whiteColor);
+}
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 940px) {
     header {
         padding: 10px 15px;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     header {
-        padding: 10px 15px;
         justify-content: space-between;
     }
 
@@ -85,6 +101,7 @@ header {
         transition: all 0.3s ease 0s;
         z-index: 498;
     }
+
     .btnSection.show {
         display: flex;
     }
