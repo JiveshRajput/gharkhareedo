@@ -26,7 +26,7 @@ function HomePage() {
         <h1 className='mainHeading'>Properties To <span>Rent</span></h1>
         <Filter submitFilterBtn={submitFilterBtn} />
         <div className='cardContainer'>
-          {(filterLocation || filterDate || filterPrice || filterPropType) ?
+          {(filterLocation && filterDate && filterPrice && filterPropType) ?
             propertyList
               .filter((item) => item.location === filterLocation && item.available === true && (item.rent >= JSON.parse(filterPrice).min && item.rent <= JSON.parse(filterPrice).max) && item.propertyType === filterPropType)
               .map((item, ind) => <DisplayCard values={item} key={ind} />)
