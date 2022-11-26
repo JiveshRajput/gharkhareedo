@@ -12,11 +12,11 @@ function Filter({ submitFilterBtn }) {
     }
 
     return (
-        <>  
+        <>
             <form className='filterContainer' onSubmit={(e) => handleFilterSubmit(e)}>
                 <div className="filterBox">
                     <label className='filterLabel' htmlFor="filterLocation">Location</label>
-                    <select name="filterLocation" className='filterValue' id="filterLocation" onClick={(e) => setLocation(e.target.value)}>
+                    <select name="filterLocation" className='filterValue' id="filterLocation" onChange={(e) => setLocation(e.target.value)}>
                         <option value="">Select Location</option>
                         <option value="New Delhi">New Delhi</option>
                         <option value="Bengaluru">Bengaluru</option>

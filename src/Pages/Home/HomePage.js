@@ -13,10 +13,14 @@ function HomePage() {
 
   function submitFilterBtn(e, { location, date, price, propType }) {
     e.preventDefault();
-    setFilterLocation(location);
-    setFilterDate(date);
-    setFilterPrice(price);
-    setFilterPropType(propType);
+    if (location === '' || date === '' || price === '' || propType === '') {
+      alert('Please select all fields to search.');
+    } else {
+      setFilterLocation(location);
+      setFilterDate(date);
+      setFilterPrice(price);
+      setFilterPropType(propType);
+    }
   }
 
   return (
