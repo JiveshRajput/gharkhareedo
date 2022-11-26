@@ -10,7 +10,7 @@ import bathroomLogo from '../../Images/Icons/bathroomIcon.png'
 import bedroomLogo from '../../Images/Icons/bedroomIcon.png'
 
 function DisplayCard(props) {
-    const { id, location, address, rent, rentType, favourite, image, bedroom, bathroom } = props.values;
+    const { id, location, address, rent, rentType, favourite, image, bedroom, bathroom, propertyType } = props.values;
     const Dispatch = useDispatch();
 
     function changeFavouriteValue() {
@@ -27,6 +27,9 @@ function DisplayCard(props) {
             <div className="displayCard">
                 <div className="cardHeader">
                     <img src={image} alt='propertyImage' />
+                    <span className="proType">
+                        {propertyType}
+                    </span>
                 </div>
                 <div className="cardBody">
                     <div className="proMainDetail">

@@ -45,6 +45,11 @@
     min-height: 265px;
 }
 
+.errorMsg{
+    color: red;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 430px) {
     .mainHeading {
         font-size: 34px;

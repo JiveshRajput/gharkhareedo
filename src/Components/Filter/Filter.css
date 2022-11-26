@@ -23,12 +23,15 @@
     border: none;
     border-bottom: 2px solid var(--whiteColor);
     background-color: rgba(0, 0, 0, 0);
-    font-size: 16px;
+    font-size: 18px;
     outline: none;
     width: 100%;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #filterBtn{
+    font-size: 18px;
     width: 100%;
     padding: 10px;
     border: none;
