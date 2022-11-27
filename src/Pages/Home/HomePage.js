@@ -13,6 +13,15 @@ function HomePage() {
 
   function submitFilterBtn(e, { location, date, price, propType }) {
     e.preventDefault();
+
+    if (location === '' && date === '' && price === '' && propType === '') { 
+      setFilterLocation('');
+      setFilterDate('');
+      setFilterPrice('');
+      setFilterPropType('');
+      return;
+    }
+
     if (location === '' || date === '' || price === '' || propType === '') {
       alert('Please select all fields to search.');
     } else {
