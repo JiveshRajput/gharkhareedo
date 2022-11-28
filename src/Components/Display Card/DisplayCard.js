@@ -34,7 +34,7 @@ function DisplayCard(props) {
                 <div className="cardBody">
                     <div className="proMainDetail">
                         <div className="proRentDetail">
-                            <span className="proRent">${rent}</span>/<span className="proRentType">{rentType}</span>
+                            <span className="proRent">₹{rent}</span>/<span className="proRentType">{rentType}</span>
                         </div>
                         <h5 className='proAreaName'>{location}</h5>
                         <p className="proAddress">{address}</p>

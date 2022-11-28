@@ -31,7 +31,7 @@ function FavouriteDisplayCard(props) {
             <h5 className='favProAreaName'>{location}</h5>
             <p className="favProAddress">{address}</p>
             <div className="favProRentDetail">
-              <span className="favProRent">${rent}</span>/<span className="favProRentType">{rentType}</span>
+              <span className="favProRent">₹{rent}</span>/<span className="favProRentType">{rentType}</span>
             </div>
           </div>
           <div className="favHeartLogoContainer" onClick={changeFavouriteValue}>
